@@ -22,6 +22,6 @@ interface ClassDao {
     @Query(value = "SELECT * from class ORDER BY teacherName ASC")
     fun getAllStudents(): LiveData<List<ClassEntity>>
 
-    @Query(value = "SELECT * from class WHERE subjectName LIMIT 1")
-    fun getStudentByDocument(studentDocument:String): LiveData<ClassEntity>
+    @Query(value = "SELECT * from class WHERE subjectName = :teacherName LIMIT 1")
+    fun getSubjectbyTeacherName(teacherName:String): LiveData<ClassEntity>
 }

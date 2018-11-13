@@ -44,10 +44,19 @@ abstract class AppDatabase:RoomDatabase() {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
 
-        private var classes:List<ClassEntity> = listOf(ClassEntity(teacherName= "Pedro",
-        subjectName= "Computing",
-        yearNum= 2018
-        ))
+        private var classes:List<ClassEntity> = listOf(
+                ClassEntity(teacherName= "Pedro", subjectName= "Computing", yearNum= 2018),
+                ClassEntity(teacherName = "David", subjectName = "Android", yearNum = 2018),
+                ClassEntity(teacherName = "Cristina", subjectName = "Inglés", yearNum = 2018),
+                ClassEntity(teacherName = "Carlos", subjectName = "IOS", yearNum = 2018),
+                ClassEntity(teacherName = "Jaime", subjectName = "ADAT", yearNum = 2018),
+                ClassEntity(teacherName = "Dani", subjectName = "TFG", yearNum = 2018),
+                ClassEntity(teacherName = "Meritxell", subjectName = "Empresa", yearNum = 2018),
+                ClassEntity(teacherName = "Laura", subjectName = "SGEM", yearNum = 2018),
+                ClassEntity(teacherName = "Margarita", subjectName = "Inglés extra", yearNum = 2018),
+                ClassEntity(teacherName = "Alvaro B.", subjectName = "Autodidacta", yearNum = 2018)
+
+        )
 
 
 
